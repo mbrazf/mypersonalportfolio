@@ -1,21 +1,36 @@
-import styled from 'styled-components'
+// Aqui importamos os recursos do react router
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
-const Title = styled.h1`
-  font-size: 1.5em;
-  text-align: center;
-  color: palevioletred;
-`;
-
-import Navbar from './components/Nav/Navbar'
-
+import Navbar from './components/layout/Nav/Navbar'
+import Home from "./components/pages/Home";
+import Project from "./components/pages/Project";
+import Skills from "./components/pages/Skills";
+import Contact from "./components/pages/Contact";
 
 
 function App() {
   
-
   return (
     <div>
-      <Navbar/>
+      <Router>
+      <Navbar />
+          <Routes>
+          <Route exact path="/home" element={<Home />}>
+	          {" "}
+	        </Route>
+          <Route  path="/projetos" element={<Project />}>
+	          {" "}
+	        </Route>
+          <Route  path="/skills" element={<Skills />}>
+	          {" "}
+	        </Route>
+          <Route  path="/contato" element={<Contact />}>
+	          {" "}
+	        </Route>
+          </Routes>
+      </Router>
+     
+      
     </div>
   )
 }

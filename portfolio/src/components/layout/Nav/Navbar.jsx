@@ -6,17 +6,23 @@ import Burger from './Burger';
 // Aqui os estilos da nav
 const Nav = styled.nav`
     width: 100%;
-    height: 55px;
+    height: 80px;
     border-bottom: 2px solid #f1f1f1;
-    padding: 0 20px;
+    padding: 0 24px;
     display: flex;
     justify-content: space-between;
-
+    align-items: center;
     background-color: #001233;
 
     .nav-branding {
         font-size: 2rem;
-        padding: 15px 0;
+        padding:  0;
+        text-decoration: none;
+        color: #FFF
+    }
+
+    .nav-branding:hover {
+        color: #279AF1;
     }
 `;
 
@@ -25,7 +31,7 @@ const Navbar = () => {
     return(
         <Nav>
             <div className="logo">
-            <a href="#" class="nav-branding">Mbrazf</a>
+            <a href="#" className="nav-branding">Mbrazf</a>
             </div>
             <Burger />
         </Nav>

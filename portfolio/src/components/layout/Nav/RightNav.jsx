@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import { Link } from 'react-router-dom'
+
 // Aqui criamos o componet Ul ja com seus estilos
 const Ul = styled.ul`
   list-style: none;
@@ -16,16 +18,15 @@ const Ul = styled.ul`
     color: white;
     text-decoration: none;
     font-family: "Roboto";
+    padding: 14px;
+    
 }
 
 a:hover {
     color: #279AF1;
-    transition: ease-in-out;
-    transform: scale(1.2);
-    
+    font-style: italic;
 }
 
-${'Aqui os estilos responsivos'}
 
   @media (max-width: 768px) {
     flex-flow: column nowrap;
@@ -34,16 +35,11 @@ ${'Aqui os estilos responsivos'}
     transform: ${({ open }) => (open ? "translateX(0)" : "translateY(-100%)")};
     top: 0;
     left: 0;
-
     height: 100vh;
     width: 100vw;
     text-align: center;
     padding-top: 3.5rem;
     transition: transform 0.3s ease-in-out;
-
-    li {
-      color: #fff;
-    }
   }
 `;
 
@@ -52,16 +48,16 @@ const RightNav = ({ open }) => {
   return (
     <Ul open={open}>
       <li>
-        <a href="">About</a>
+        <Link to="/home">Home</Link>
       </li>
       <li>
-        <a href="">Projetos</a>
+      <Link to="/projetos">Projetos</Link>
       </li>
       <li>
-        <a href="">Skills</a>
+      <Link to="/skills">Skills</Link>
       </li>
-      <li>
-        <a href="">Contato</a>
+      <li >
+      <Link to="/contato">Contato</Link>
       </li>
     </Ul>
   );

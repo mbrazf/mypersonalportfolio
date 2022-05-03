@@ -8,13 +8,11 @@ const StyledBurger = styled.div`
   width: 2rem;
   height: 2rem;
   position: fixed;
-  top: 15px;
+  top: 25px;
   right: 20px;
   z-index: 20;
   display: none;
   cursor: pointer;
-
-  ${"Estilos quando a largura da tela for 768px"}
 
   @media (max-width: 768px) {
     display: flex;
@@ -29,8 +27,6 @@ const StyledBurger = styled.div`
     border-radius: 10px;
     transform-origin: 1px;
     transition: all 0.3s linear;
-
-    ${"Aqui criamos a animção do menu hamburger quando ele estiver ativo"}
 
     &:nth-child(1) {
       transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0)")};
