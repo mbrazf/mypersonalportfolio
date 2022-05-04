@@ -15,7 +15,7 @@ function App() {
       <Router>
       <Navbar />
           <Routes>
-          <Route exact path="/home" element={<Home />}>
+          <Route  path="/" element={<Home />}>
 	          {" "}
 	        </Route>
           <Route  path="/projetos" element={<Project />}>
@@ -29,8 +29,6 @@ function App() {
 	        </Route>
           </Routes>
       </Router>
-     
-      
     </div>
   )
 }

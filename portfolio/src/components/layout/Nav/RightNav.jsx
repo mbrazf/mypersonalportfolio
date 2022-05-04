@@ -48,7 +48,7 @@ const RightNav = ({ open }) => {
   return (
     <Ul open={open}>
       <li>
-        <Link to="/home">Home</Link>
+        <Link to="/">Home</Link>
       </li>
       <li>
       <Link to="/projetos">Projetos</Link>

@@ -13,6 +13,7 @@ const Nav = styled.nav`
     justify-content: space-between;
     align-items: center;
     background-color: #001233;
+    position: fixed;
 
     .nav-branding {
         font-size: 2rem;
