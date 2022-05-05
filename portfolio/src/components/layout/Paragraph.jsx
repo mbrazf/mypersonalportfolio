@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 // Estilos do component Paragraph
 const Content = styled.p`
-font-size: 1.5rem;
+font-size: 1rem;
 font-weight: 500;
 color: #FFF
 `

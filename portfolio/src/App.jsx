@@ -6,6 +6,7 @@ import Home from "./components/pages/Home";
 import Project from "./components/pages/Project";
 import Skills from "./components/pages/Skills";
 import Contact from "./components/pages/Contact";
+import About from "./components/pages/About"
 
 
 function App() {
@@ -16,6 +17,9 @@ function App() {
       <Navbar />
           <Routes>
           <Route  path="/" element={<Home />}>
+	          {" "}
+	        </Route>
+          <Route  path="/sobre" element={<About />}>
 	          {" "}
 	        </Route>
           <Route  path="/projetos" element={<Project />}>

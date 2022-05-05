@@ -1,6 +1,4 @@
 import styled from 'styled-components'
-
-import Title from '../layout/Title'
 import Paragraph from '../layout/Paragraph'
 
 
@@ -26,13 +24,19 @@ border-radius: 10px;
 box-shadow: 0 0 1em #001233;
 `
 
+const HomeTitle = styled.h1`
+  color:  #279AF1;
+  font-weight: 500;
+    font-size: 2.5rem;
+`
+
 // Aqui criamos a página inicial / home
 function Home(){
   return (
     <div>
       <MainContent>
         <MainContainer>
-          <Title text="Olá, eu sou o Marcelo Braz &#128075; "/>
+          <HomeTitle>Olá, eu sou o Marcelo Braz &#128075;</HomeTitle>
           <Paragraph content="Desenvolvedor Front End Iniciante | Júnior"/>
         </MainContainer>
       </MainContent>
