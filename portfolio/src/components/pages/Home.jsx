@@ -4,12 +4,13 @@ import Paragraph from '../layout/Paragraph'
 
 // Aqui os estilos do styled component
 const MainContent = styled.main`
-width: 100%;
+width: 100vw;
 height: 100vh;
 background-color: #279AF1;
 display: flex;
-justify-content: space-evenly;
+justify-content: center;
 align-items: center;
+
 `
 
 const MainContainer = styled.div`

@@ -5,7 +5,6 @@ import Title from "../layout/Title";
 import {
   FaBootstrap,
   FaCss3,
-  FaGit,
   FaGitAlt,
   FaHtml5,
   FaJs,
@@ -19,13 +18,14 @@ const SkillsSection = styled.section`
   background-color: #279af1;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
+  
 `;
 
 const SkillsWrapper = styled.div`
   width: 700px;
-  height: 350px;
+  height: 300px;
   background-color: #001233;
   display: flex;
   flex-direction: row;

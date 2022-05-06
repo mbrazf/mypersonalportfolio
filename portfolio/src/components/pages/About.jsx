@@ -22,6 +22,8 @@ const AboutContent = styled.div`
   background: #001233;
   border-radius: 10px;
   box-shadow: 0 0 1em #001233;
+  border-top-left-radius: 60px;
+  border-bottom-right-radius: 60px;
 `;
 
 const Wrapper = styled.div`
